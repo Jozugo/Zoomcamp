@@ -19,4 +19,4 @@ services:
   -e POSTGRES_DB="ny_taxi" \
   -v /workspaces/Zoomcamp/ny_taxi_postgres_data \
   -p 5432:5432 \
-  postgres:13wc -l
+  postgres:13
