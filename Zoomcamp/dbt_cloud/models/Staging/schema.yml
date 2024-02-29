@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: staging
+    database: daring-octane-409806
+     # For postgres:
+      #database: production
+    schema: ny_taxi
+
+      # loaded_at_field: record_loaded_at
+    tables:
+      - name: green_tripdata_2019
+      - name: yellow_tripdata_2019
+         # freshness:
+           # error_after: {count: 6, period: hour}
+
